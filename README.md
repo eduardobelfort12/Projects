@@ -1,1 +1,8 @@
-# Projects
+//Este projeto se trata de um simples sitema crud, onde o usuário consegue criar um cadastro e um perfil de usuário escolhendo entre níveis de acesso como : usuário comum, sub-administrador ou administrador.
+Dentro do painel principal do usuário já logado, funções no menu do painel são liberadas de acordo com o nível de acesso que o usuário foi cadastrado, e mesmo que o usuário tente acessar funções não atribuidas ao seu nível de acesso através da url diretamente, ele não terá sucesso caso seu nível de acesso não seja correspondente.
+Dentro do painel principal para o nível administrador você pode executar funções como, listar todos os usuários que estão cadastrados no sistema, poderá excluir o usuário desejado, também poderá adicionar novos usuários desejados,editar os dados de si mesmo, alterar nível de acesso de um usuário desejado através da listagem de usuários e buscar um usuário específico através de seu índice.
+
+//This project is a simple crud system, where the user can create a register and a user profile groups between access levels such as: ordinary user, sub-administrator or administrator.
+Within the main panel of the user already logged in, functions in the panel menu are released according to the level of access that the user was registered, and even if the user tries to access functions not assigned to their access level through the url directly, he will not be successful if your access level does not match.
+Within the main panel for the administrator level you can perform functions such as, list all users who are registered in the system, you can delete the desired user, you can also add new desired users, edit the data yourself, change the access level of a desired user through the user list and search for a specific user through its index.
+ 
