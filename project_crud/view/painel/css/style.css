@@ -1,0 +1,610 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Arial";
+}
+html,body{
+	height: 100%;
+	background: rgb(225,225,225);
+	overflow-y: auto;
+}
+body{
+	overflow-x: hidden;
+}
+.box-login{
+	box-shadow: 10px 10px 5px rgb(200,200,200);
+	max-width: 600px;
+	width: 95%;
+	padding: 60px 2%;
+	background: white;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+	-ms-transform:translate(-50%,-50%);
+}
+.box-login h2{
+	text-align: center;
+	font-size: 19px;
+	text-transform: uppercase;
+	font-weight: normal;
+	margin:10px 0;
+	color: black;
+}
+.box-login input[type=text],
+.box-login input[type=password]
+{
+	width: 100%;
+	height: 40px;
+	border: 1px solid #ccc;
+	padding-left: 8px;
+	margin-top:8px;
+}
+.box-login input[type=submit]{
+	width: 100px;
+	height: 40px;
+	cursor: pointer;
+	margin-top: 10px;
+	font-size: 14px;
+	background: #00bfa5;
+	color: white;
+	border: 0;
+}
+.erro-box{
+	width: 100%;
+	padding: 8px 2%;
+	text-align: center;
+	background: #F75353;
+	color: white;
+	font-size: 15px;
+}
+.clear{
+	clear:both;
+}
+.center{
+	padding:0 2%;
+	margin:0 auto;
+}
+.loggout{
+	float: right;
+}
+.loggout a{
+	padding: 0 20px;
+	position: relative;
+	top: 4px;
+	text-decoration: none;
+	color: white;
+	font-size: 16px;
+}
+.loggout a > span{
+	font-size: 16px;
+	text-decoration: none;
+}
+.menu-btn{
+	float: left;
+	cursor: pointer;
+	font-size: 23px;
+	color: white;
+}
+.menu-wraper{
+	width:250px;
+}
+div.menu{
+	overflow-x:hidden;
+	overflow-y: auto;
+	height: 100%;
+	padding:10px 0;
+	position: fixed;
+	left: 0;
+	top: 0;
+	background: #455a64;
+	float: left;
+	width: 250px;
+
+}
+header{
+	position: relative;
+	left: 250px;
+	padding: 10px 0;
+	background: #78909c; 
+	width: calc(100% - 250px);
+}
+.content{
+	width: calc(100% - 250px);
+	position: relative;
+	left: 250px;
+	padding: 10px;
+}
+#menu-header{
+	transition: margin-left 0.5s;
+
+}
+.items-menu{
+	margin-top: 30px;
+}
+.items-menu h2{
+	text-align: left;
+	font-weight: normal;
+	font-size: 17px;
+	background: #2F3D42;
+	color: white;
+	padding:8px;
+}
+.items-menu a{
+	display: block;
+	padding: 8px;
+	font-weight: 300;
+	font-size: 16px;
+	text-decoration: none;
+	color: white;
+	border-bottom: 2px solid #2F3D42;
+}
+div.box-usuario{
+	text-align: center;
+}
+.avatar-usuario{
+	text-align: left;
+	display: inline-block;
+	width: 130px;
+	height: 130px;
+	border-radius: 50%;
+	border: 3px solid #2F3D42;
+}
+.avatar-usuario i{
+	position: relative;
+	left: 50%;
+	top: 50%;
+	transform:translate(-50%,-50%);
+	-ms-transform:translate(-50%,-50%);
+	font-size: 50px;
+	color: #2F3D42;
+}
+.imagem-usuario{
+	display: inline-block;
+	width: 130px;
+	height: 130px;
+	position: relative;
+	border-radius: 50%;
+	border: none;
+}
+.imagem-usuario img{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	padding: 8px;
+	border-radius: 50%;
+}
+.nome-usuario{
+	text-align: center;
+	margin-top: 10px;
+}
+.nome-usuario p{
+	color: white;
+	font-size: 15px;
+	font-weight: normal;
+}
+.w100{
+	width: 100%;
+}
+.w50{
+	width: 49%;
+}
+.left{
+	float: left;
+}
+.right{
+	float: right;
+}
+.box-content{
+	width: 100%;
+	background: white;
+	padding: 30px;
+	height: 100%;
+	margin-right: 15px; 
+	margin-bottom: 25px;
+}
+#main {
+  transition: margin-left 0.5s;
+  
+}
+#menu-sidenav{
+	transition: margin-left 0.5s;
+}
+.box-content h2{
+	font-weight: 300;
+	font-size: 23px;
+}
+.quebrarlinha{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	margin: 10px;
+}
+.wraper-table{
+	overflow-x: auto;
+}
+table{
+	font-weight: 300;
+	/*min-width: 800px;*/
+	margin:20px 0;
+	width: 100%;
+	border-collapse: collapse;
+}
+table tr:nth-of-type(1){
+	background: #0091ea;
+	color: white;
+}
+table tr{
+	border-bottom: 2px solid #ccc;
+	padding-top: 20px;
+}
+table tr{
+	color: #555;
+}
+table td{
+	flex-direction: row;
+	padding: 8px ;
+}
+table a{
+	font-weight: normal;
+	font-size: 13px;
+	color: white;
+	text-decoration: none;
+	padding: 4px 6px;
+	background: #E05C4E;
+}
+.paginacao{
+	margin:20px 0;
+	text-align: center;
+}
+.paginacao a{
+	font-size: 14px;
+	margin:0 8px;
+	display: inline-block;
+	padding: 3px 4px;
+	border: 1px solid #ccc;
+	text-decoration: none;
+	color: #666;
+}
+.paginacao a.page-selected{
+	background: rgb(220,220,220);
+}
+.box-metricas{
+	margin-top:16px;
+	padding:0 15px;
+}
+.box-metrica-single{
+	float: left;
+	position: relative;
+	width: 33.3%;
+	background: #F4B03E;
+	border: 5px solid white;
+}
+.box-metricas .box-metrica-single:nth-of-type(2){
+	background: #E05C4E;
+}
+.box-metricas .box-metrica-single:nth-of-type(3){
+	background: #0091ea;
+}
+.box-metrica-wraper{
+	padding: 10px 20px;
+	text-align: left;
+	color: white;
+}
+.box-metrica-wraper h2{
+	font-size: 28px;
+}
+.box-metrica-wraper p{
+	padding: 10px 0;
+	font-size: 26px;
+}
+.table-responsive{
+	margin:20px auto;
+	font-weight: 300;
+}
+.table-responsive .row:nth-of-type(1){
+	font-weight: normal;
+	background: #00bfa5;
+	padding: 10px;
+	color: white;
+}
+.table-responsive .row{
+	color: #777;
+	padding: 8px;
+	border-bottom: 1px solid #ccc;
+}
+.col{
+	float: left;
+	width: 50%;
+}
+.box-content form{
+	margin:30px 0;
+}
+.box-content form label{
+	font-size: 17px;
+	font-weight: 300;
+	color: black;
+	display: block;
+}
+.box-content .form-group{
+	margin:15px 0;
+}
+.box-content form input[type=text],
+.box-content form input[type=password]
+{
+	margin-top:8px;
+	font-size: 16px;
+	font-weight: normal;
+	color: black;
+	width: 100%;
+	height: 40px;
+	border: 1px solid #ccc;
+	padding-left: 8px;
+}
+.box-content form textarea{
+	margin-top:8px;
+	font-size: 16px;
+	font-weight: normal;
+	color: black;
+	width: 100%;
+	height: 150px;
+	border: 1px solid #ccc;
+	padding: 8px;
+	resize: vertical;
+}
+.box-content form select{
+	margin-top:8px;
+	font-size: 16px;
+	font-weight: normal;
+	color: black;
+	width: 100%;
+	height: 40px;
+	border: 1px solid #ccc;
+	padding-left: 8px;
+}
+.box-content form input[type=file]{
+	margin-top:8px;
+	width: 100%;
+	padding: 8px;
+	border: 1px solid #ccc;
+}
+.box-content form input[type=submit]{
+	width: 125px;
+	height: 40px;
+	cursor: pointer;
+	margin-top: 10px;
+	font-size: 16px;
+	background: #00bfa5;
+	color: white;
+	border: 0;
+}
+.box-content form button[type=submit]{
+	width: 134px;
+	height: 40px;
+	cursor: pointer;
+	margin-top: 10px;
+	font-size: 16px;
+	background: #00bfa5;
+	color: white;
+	border: 0;
+}
+.box-alert{
+	width: 100%;
+	padding:8px 0;
+	text-align: center;
+}
+.box-alert2{
+	width: 100%;
+	padding:8px 0;
+	text-align: center;
+}
+.box-alert3{
+	overflow-y: auto; 
+	position: fixed;
+	z-index: 999;
+	width: 50%;
+	height: 10%;
+	right: 50%;
+	border-radius:10px 10px 10px 10px; 
+	left: 50%;
+	top: 50%;
+	transform:translate(-50%,-50%);
+	-ms-transform:translate(-50%,-50%);
+	padding:8px 0;
+	text-align: center;
+}
+.sucesso{
+	background: #a5d6a7;
+	font-size: 20px;
+	color: white;
+}
+.erro{
+	background: #F75353;
+	color: white;
+}
+.form-group-login label{
+	font-size: 13px;
+	padding-right: 6px;
+	font-weight: 300;
+	color: black;
+}
+form .form-group-login:nth-of-type(2){
+	position: relative;
+	top: 10px;
+}
+
+@media screen and (max-width: 768px){	
+	.content{
+		width: 100%;
+		ma-height: 130%;
+		left: 0;
+	}
+	.box-content form button[type=submit]{
+	width: 100%;
+}
+	header{
+		left: 0;
+		width: 100%;
+	}
+}
+@media screen and (max-width: 500px){
+	.w50{
+		width: 100%;
+	}
+	.box-single-metrica{
+		width: 100%;
+		padding-top: 40%;
+	}
+}
+@media screen and (max-width: 400px){
+
+	.box-metrica-wraper h2{
+	font-size: 24px;
+	}
+	.box-metrica-wraper p{
+	padding: 10px 0;
+	font-size: 22px;
+	}
+
+	.menu-wraper{
+		width: 250px;
+	}
+}
+
+@media screen and (max-width: 500px){
+	.items-menu a{
+		font-size: 15px;
+	}
+}
+
+@media screen and (max-width: 768px) {
+ div.menu.sidenav {width: 0;
+ 	z-index: 999;}
+
+ 	.box-alert2{
+ 		position: fixed;
+ 		width: 280px;
+ 		margin-top:-183px;
+ 	}
+ 	.box-alert3{
+ 	position:fixed;
+	z-index: 999;
+	width: 90%;
+	height: 10%;
+	right: 50%;
+	border-radius:10px 10px 10px 10px; 
+	left: 50%;
+	top: 50%;
+	transform:translate(-50%,-50%);
+	-ms-transform:translate(-50%,-50%);
+	padding:8px 0;
+	text-align: center;
+ 	}
+ 
+ 	.sucesso{
+ 		padding: 10px 19px;
+ 		font-size: 15px;
+ 	}
+ 	table{
+ 		width: 100%;
+ 		min-width:800px; 
+ 	}
+
+}
+
+@media (max-width: 800px) {
+  table td tr{
+    flex-direction: column;
+  }
+}
+body {font-family: Arial, Helvetica, sans-serif;}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  -webkit-animation-name: fadeIn; /* Fade in the background */
+  -webkit-animation-duration: 0.4s;
+  animation-name: fadeIn;
+  animation-duration: 0.4s
+}
+
+/* Modal Content */
+.modal-content {
+  position: fixed;
+  bottom: 50%;
+  background-color: #fefefe;
+  width: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+	-ms-transform:translate(-50%,-50%);
+  -webkit-animation-name: slideDown;
+  -webkit-animation-duration: 0.4s;
+  animation-name: slideDown;
+  animation-duration: 0.4s
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-header {
+  padding: 10px 19px;
+  background-color:#78909c;
+  color: white;
+  height: 50px;
+}
+
+.modal-body {
+	padding: 10px 90px;height: 50px;
+	text-align:center;}
+
+.modal-footer {
+  padding: 2px 16px;
+  background-color:#78909c;
+  color: white;
+  height: 50px;
+}
+
+/* Add Animation */
+@-webkit-keyframes slideDown {
+  from {bottom: -300px; opacity: 0} 
+  to {bottom: 50%; opacity: 1}
+}
+
+@keyframes slideDown {
+  from {bottom: -300px; opacity: 0}
+  to {bottom: 50%; opacity: 1}
+}
+
+@-webkit-keyframes fadeIn {
+  from {opacity: 0} 
+  to {opacity: 1}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0} 
+  to {opacity: 1}
+}
